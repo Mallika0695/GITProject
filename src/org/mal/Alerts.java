@@ -12,11 +12,6 @@ public static void main(String[] args) {
 	WebDriver driver=new ChromeDriver();
 			driver.get("http://demo.automationtesting.in/Alerts.html");
 			driver.manage().window().maximize();
-	   //driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
-	  // Alert a=driver.switchTo().alert();
-	  // String text=a.getText();
-	   //System.out.println(text);
-	   //a.accept();
 	   
 	// driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 	   Alert a=driver.switchTo().alert();
@@ -26,7 +21,9 @@ public static void main(String[] args) {
 	     
 	    driver.findElement(By.xpath("//button[@class='btn btn-info']")).click();
 	    a.sendKeys("YES");		
+	    System.out.println(a);
 	     a.accept();
+	     
 	     
 	     
 	  
